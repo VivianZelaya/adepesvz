@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+    <title>Ubicación</title>
+    <link rel="icon" href="img/ADEPES.png" type="image/png">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">
+            <img src="img/ADEPES.png" alt="ADEPES Logo">
+        </a>
+        <div class="navigation">
+            <ul>
+                <!-- <i id="menu-close" class="fas fa-times"></i> -->
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">¿Quiénes somos?</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="mision.html">Misión y Visión</a></li>
+                        <li><a href="valores.html">Valores</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Productos y Servicios</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fiduciarios.html">Créditos Fiduciarios</a></li>
+                        <li><a href="hipotecarios.html">Créditos Hipotecarios</a></li>
+                        <li><a href="beneficios.html">Condiciones y Beneficios</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="active" href="#">Contáctanos</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ubicacion.html">Ubicación</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- <img id="menu-btn" src="img/menu.png" alt="">-->
+        </div>
+    </nav>
+
+
+    <section id="ubicacion-home">
+        <h2>Ubicación</h2>
+    </section>
+
+    <section id="ubicacion-container">
+        <div class="contenido-izquierda">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1wB6Fr2odWJZBHCfPHEVI0rAPdWrYQak&ehbc=2E312F&noprof=1"></iframe>
+    
+            <div class="info-box">
+                <p>
+                    La sede de la Asociación está ubicada en Barrio El Centro de Pespire, Choluteca según las coordenadas:<br><br>
+                    <strong>Límites:</strong><br>
+                    Al NORTE con la calle del comercio,<br>
+                    al SUR con propiedad de la misma asociación,<br>
+                    al ESTE con la Asociación Pespirense de Agropecuario Limitada (APRAL),<br>
+                    al OESTE con el Registro Nacional de las Personas.<br><br>
+                    <strong>Adicionalmente, cuenta con oficinas en Tegucigalpa y Choluteca:</strong><br>
+                    • En el Departamento de Choluteca.<br>
+                    • La Granja frente a Laboratorios Médicos, Tegucigalpa, Francisco Morazán.
+                </p>
+            </div>
+        </div>
+    
+        <div class="formulario-derecha">
+            <h2>Contáctanos</h2>
+            <form action="https://formsubmit.co/zelayavivian022@gmail.com" method="POST" onsubmit="return mostrarAlerta()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="asunto">Asunto:</label>
+                <input id="asunto" name="asunto" rows="5" required></input>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+    
+                <button type="submit">Enviar mensaje</button>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/ubicacion.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+    
+
+
+
+    <footer>
+        <div class="footer-col">
+            <h3>¿Quiénes somos?</h3>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="mision.html">Misión y Visión</a></li>
+            <li><a href="valores.html">Valores</a></li>
+        </div>
+        <div class="footer-col">
+            <h3>Productos y Servicios</h3>
+            <li><a href="fiduciarios.html">Créditos Fiduciarios</a></li>
+            <li><a href="hipotecarios.html">Créditos Hipotecarios</a></li>
+            <li><a href="beneficios.html">Condiciones y Beneficios</a></li>
+        </div>
+        <div class="footer-col">
+            <h3>Contáctanos</h3>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©2025</p>
+            <div class="pro-links">
+                <a href="https://facebook.com/adepeshn" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/adepeshn/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active');
+        });
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active');
+        });
+    </script>
+
+    <script src="script/script.js"></script>
+        
+    </script>
+
+</body>
+
+</html>
